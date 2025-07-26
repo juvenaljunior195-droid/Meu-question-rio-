@@ -1,1 +1,55 @@
 
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Universidade Nachingwea</title>
+  <style>
+    body {
+      background-color: red;
+      color: black;
+      font-family: Arial, sans-serif;
+    }
+    form {
+      margin: 20px;
+      padding: 20px;
+      background-color: white;
+      color: black;
+      border-radius: 8px;
+      max-width: 500px;
+    }
+    input, textarea {
+      width: 100%;
+      margin-bottom: 10px;
+      padding: 8px;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Universidade Nachingwea</h1>
+  <p>Formulário sobre o 1º semestre</p>
+
+  <form>
+    <label>Nome completo:</label>
+    <input type="text" name="nome" required>
+
+    <label>Curso:</label>
+    <input type="text" name="curso">
+
+    <label>Como avalia a sua experiência no 1º semestre?</label>
+    <textarea name="experiencia" rows="4"></textarea>
+
+    <label>Disciplinas que mais gostou:</label>
+    <input type="text" name="disciplinas">
+
+    <label>O que gostaria de melhorar?</label>
+    <textarea name="melhorar" rows="3"></textarea>
+
+    <label>Nota geral para o semestre (0-10):</label>
+    <input type="number" name="nota" min="0" max="10">
+
+    <input type="submit" value="Enviar">
+  </form>
+
+</body>
+</htm>
